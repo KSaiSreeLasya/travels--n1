@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Registered customer profiles for S R Rental Cars",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The unique Firebase Auth user UID" },
+        "fullName": { "type": "string", "description": "Customer's full name" },
+        "email": { "type": "string", "format": "email", "description": "Customer's email address" },
+        "phone": { "type": "string", "description": "Customer's WhatsApp/phone number" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Timestamp when the user registered" }
+      },
+      "required": ["userId", "fullName", "email", "phone", "createdAt"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Car rental inquiries and booking requests captured in real-time",
+      "type": "object",
+      "properties": {
+        "inquiryId": { "type": "string", "description": "Unique inquiry identifier" },
+        "userId": { "type": "string", "description": "UID of the user who made the inquiry" },
+        "customerName": { "type": "string", "description": "Name of the customer" },
+        "customerEmail": { "type": "string", "format": "email", "description": "Email address" },
+        "customerPhone": { "type": "string", "description": "WhatsApp or phone number" },
+        "carId": { "type": "string", "description": "The ID of the car being inquired" },
+        "carName": { "type": "string", "description": "The name/model of the car" },
+        "startDate": { "type": "string", "format": "date", "description": "Booking start date" },
+        "endDate": { "type": "string", "format": "date", "description": "Booking end date" },
+        "durationDays": { "type": "number", "description": "Total duration of the rental in days" },
+        "totalEstimate": { "type": "number", "description": "Estimated cost of rental in INR" },
+        "status": { "type": "string", "description": "Status of the inquiry", "enum": ["pending", "contacted", "confirmed", "cancelled"] },
+        "whatsappSent": { "type": "boolean", "description": "Whether WhatsApp message redirection was initiated" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Timestamp when inquiry was recorded" }
+      },
+      "required": ["inquiryId", "customerName", "customerEmail", "customerPhone", "carId", "carName", "startDate", "endDate", "durationDays", "totalEstimate", "status", "whatsappSent", "createdAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "User profile collection partitioned by Auth UID"
+    },
+    "inquiries/{inquiryId}": {
+      "schema": "Inquiry",
+      "description": "Inquiries recorded in real-time by S R Rental Cars"
+    }
+  }
+}

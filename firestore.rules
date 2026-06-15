@@ -1,0 +1,59 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global Safe Net - Default Deny Catch-All
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Primitive Helpers
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Validation functions
+    function isValidUser(data) {
+      return data.userId is string && data.userId == request.auth.uid
+          && data.fullName is string && data.fullName.size() >= 2 && data.fullName.size() <= 100
+          && data.email is string && data.email.size() <= 100
+          && data.phone is string && data.phone.size() <= 20;
+    }
+
+    function isValidInquiry(data) {
+      return data.inquiryId is string && data.inquiryId.size() <= 128
+          && data.customerName is string && data.customerName.size() >= 2 && data.customerName.size() <= 100
+          && data.customerEmail is string && data.customerEmail.size() <= 100
+          && data.customerPhone is string && data.customerPhone.size() <= 20
+          && data.carId is string
+          && data.carName is string
+          && data.startDate is string
+          && data.endDate is string
+          && data.durationDays is number
+          && data.totalEstimate is number
+          && data.status in ['pending', 'contacted', 'confirmed', 'cancelled']
+          && data.whatsappSent is bool;
+    }
+
+    // User collection rules
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId) && isValidUser(request.resource.data);
+      allow update: if isOwner(userId) && isValidUser(request.resource.data)
+          && request.resource.data.createdAt == resource.data.createdAt; // Prevent modifying creation time
+    }
+
+    // Inquiry collection rules
+    match /inquiries/{inquiryId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid && isValidInquiry(request.resource.data);
+      allow update: if isSignedIn() && resource.data.userId == request.auth.uid && isValidInquiry(request.resource.data)
+          && request.resource.data.userId == resource.data.userId
+          && request.resource.data.carId == resource.data.carId;
+      allow delete: if isSignedIn() && resource.data.userId == request.auth.uid;
+    }
+  }
+}

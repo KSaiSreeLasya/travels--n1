@@ -1,0 +1,6 @@
+{
+  "name": "Sree Hanuman Travels",
+  "description": "Official premium car, bus, and tourist package booking portal for Sree Hanuman Travels in Kadapa. Featuring real-time inquiry tracking and direct-to-owner WhatsApp dispatching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

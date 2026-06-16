@@ -11,6 +11,7 @@ import { CarCard } from './components/CarCard';
 import { BookingModal } from './components/BookingModal';
 import { AboutContact } from './components/AboutContact';
 import { StructureExplorer } from './components/StructureExplorer';
+import { ScrollToTop } from './components/ScrollToTop';
 
 import tirupatiImg from './assets/images/tirupati_temple_1781589399650.jpg';
 import kanipakamImg from './assets/images/kanipakam_temple_1781589414842.jpg';
@@ -1507,7 +1508,7 @@ function AppContent() {
       </footer>
 
       {/* Dynamic Modal PanelsSheets */}
-      <BookingModal 
+      <BookingModal
         car={selectedCar}
         isOpen={isBookingOpen}
         onClose={() => setIsBookingOpen(false)}
@@ -1515,6 +1516,9 @@ function AppContent() {
           // Sync database completes
         }}
       />
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
 
     </div>
   );

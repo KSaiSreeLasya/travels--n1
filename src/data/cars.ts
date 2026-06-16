@@ -29,7 +29,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 7,
-    image: innovaImg,
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F594fe5a2ab1e4f25ba78fe7ac3125b9b?format=webp&width=800&height=1200",
     mileage: "12.5 km/l",
     rating: 4.9,
     features: ["Equipped with heavy-duty front chrome SHIELD guard bar", "White professional finish", "Experienced outstation driver option", "Rooftip luggage carrier available", "Perfect for long family pilgrimages"]
@@ -42,7 +42,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 13,
-    image: cruiserImg,
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F08fc29012269450babae272eb28b0ed0?format=webp&width=800&height=1200",
     mileage: "10.5 km/l",
     rating: 4.8,
     features: ["12+1 Spacious layout for groups", "Heavy-duty metal roof luggage carrier rack", "Excellent high ground clearance", "Best-in-class performance for long offroad/rural paths"]
@@ -55,7 +55,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 12,
-    image: toofanImg,
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F510494062f504f169861f97aef2a9987?format=webp&width=800&height=1200",
     mileage: "11.0 km/l",
     rating: 4.7,
     features: ["11+1 spacious passenger seats", "Clean side-profile TOOFAN signature decals", "Durable all-terrain chassis", "Perfect for Kadapa local & rural group transport"]
@@ -68,7 +68,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 25,
-    image: smlBusImg,
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F047dadc071874fc2af8548c83672b972?format=webp&width=800&height=1200",
     mileage: "8.0 km/l",
     rating: 4.9,
     features: ["25+1 premium push-back luxury seats", "Full air-conditioned executive coach", "High roof clearance layout", "Digital music & sound system", "Ideal for marriages, tours, and company events"]
@@ -81,7 +81,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 7,
-    image: etiosImg, // Pointed to the modern Innova Crysta image previously named etiosImg
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fb2d1196a4e8e4e328139046fe974eb62?format=webp&width=800&height=1200",
     mileage: "13.5 km/l",
     rating: 4.9,
     features: ["Premium modern body lines", "Rugged matte black front protector bumper shield", "Plush luxury interior captain seats", "Perfect cooling front and rear automatic AC", "First-class highway ride comfort"]
@@ -94,7 +94,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Petrol",
     seats: 7,
-    image: ertigaImg,
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F6334270d1da149148ab68cf5115a5037?format=webp&width=800&height=1200",
     mileage: "15.0 km/l",
     rating: 4.7,
     features: ["7 Seats compact passenger layout", "Traditional front flower garland ready for auspicious trips", "Highly economical smart-hybrid engine", "Dual blower front & rear cooling vents", "Excellent for city and tourist visits"]
@@ -107,7 +107,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Petrol",
     seats: 5,
-    image: balenoImg,
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fe17fff9748754b208b37aab9fe771ee0?format=webp&width=800&height=1200",
     mileage: "19.5 km/l",
     rating: 4.6,
     features: ["Beautiful hood red decorative ribbons perfect for weddings", "Sleek projector LED headlights for night travel", "Ultra-maneuverable local hatchback", "Extremely fuel efficient engine", "Smart keyless entry push button start"]

@@ -18,12 +18,12 @@ export const CarCard: React.FC<CarCardProps> = ({ car, onBook }) => {
       id={`car-card-${car.id}`}
     >
       {/* Aspect Ratio Container for image */}
-      <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
-        <img 
-          src={car.image} 
+      <div className="relative w-full overflow-hidden bg-slate-950" style={{ aspectRatio: '2/3' }}>
+        <img
+          src={car.image}
           alt={car.name}
           referrerPolicy="no-referrer"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-75 group-hover:opacity-100"
+          className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105 opacity-75 group-hover:opacity-100"
         />
         {/* Rating overlay badge */}
         <div className="absolute top-3 right-3 flex items-center space-x-1 rounded-full bg-slate-950/80 backdrop-blur-md px-3 py-1 text-xs font-black text-white border border-white/10">

@@ -40,7 +40,7 @@ export const CAR_FLEET: Car[] = [
     type: "MUV",
     pricePerDay: 4200,
     transmission: "Manual",
-    fuel: "Diesel",
+    fuel: "",
     seats: 5,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F953f90c4f39f4c3cb5555a85019d06ee?format=webp&width=1200&height=1800",
     mileage: "13 km/l",

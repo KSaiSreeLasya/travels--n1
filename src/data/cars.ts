@@ -35,8 +35,8 @@ export const CAR_FLEET: Car[] = [
     features: ["Equipped with heavy-duty front chrome SHIELD guard bar", "White professional finish", "Experienced outstation driver option", "Rooftip luggage carrier available", "Perfect for long family pilgrimages"]
   },
   {
-    id: "force-cruiser",
-    name: "Force Cruiser (12+1 Seater)",
+    id: " Etios Sedan ",
+    name: "Toyota Etios Sedan  (12+1 Seater)",
     type: "MUV",
     pricePerDay: 4200,
     transmission: "Manual",
@@ -62,7 +62,7 @@ export const CAR_FLEET: Car[] = [
   },
   {
     id: "sml-executive-bus",
-    name: "SML Isuzu Executive Bus (25+1)",
+    name: "SML Isuzu Executive Mini Bus(25+1)",
     type: "Bus",
     pricePerDay: 9500,
     transmission: "Manual",
@@ -74,8 +74,8 @@ export const CAR_FLEET: Car[] = [
     features: ["25+1 premium push-back luxury seats", "Full air-conditioned executive coach", "High roof clearance layout", "Digital music & sound system", "Ideal for marriages, tours, and company events"]
   },
   {
-    id: "innova-crysta",
-    name: "Toyota Innova Crysta (Luxury MUV)",
+    id: "Maruthi ",
+    name: "Maruthi Dzire (Luxury MUV)",
     type: "MUV",
     pricePerDay: 3800,
     transmission: "Manual",
@@ -100,8 +100,8 @@ export const CAR_FLEET: Car[] = [
     features: ["7 Seats compact passenger layout", "Traditional front flower garland ready for auspicious trips", "Highly economical smart-hybrid engine", "Dual blower front & rear cooling vents", "Excellent for city and tourist visits"]
   },
   {
-    id: "suzuki-baleno",
-    name: "Suzuki Baleno (Marriage Special)",
+    id: "SML Isuzu Executive Bus",
+    name: "SML Isuzu Executive Bus",
     type: "Hatchback",
     pricePerDay: 1800,
     transmission: "Manual",

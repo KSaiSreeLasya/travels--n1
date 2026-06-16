@@ -94,7 +94,7 @@ export const CarCard: React.FC<CarCardProps> = ({ car, onBook }) => {
         </div>
 
         {/* Action Row containing: Call Now & Custom Reservation Book Inquiry */}
-        <div className="pt-2 grid grid-cols-2 gap-3.5 mt-auto">
+        <div className="pt-2 grid grid-cols-3 gap-3.5 mt-auto">
           {/* Direct call button for more info */}
           <a
             href="tel:9676939529"

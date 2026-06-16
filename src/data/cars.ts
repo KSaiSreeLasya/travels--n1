@@ -12,7 +12,7 @@ export interface Car {
   type: 'SUV' | 'Hatchback' | 'Sedan' | 'MUV' | 'Bus';
   pricePerDay: number;
   transmission: 'Manual' | 'Automatic';
-  fuel: 'Diesel' | 'Petrol' | 'Electric' | 'CNG';
+  
   seats: number;
   image: string;
   mileage: string;
@@ -40,7 +40,7 @@ export const CAR_FLEET: Car[] = [
     type: "MUV",
     pricePerDay: 4200,
     transmission: "Manual",
-    fuel: "",
+    
     seats: 5,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F953f90c4f39f4c3cb5555a85019d06ee?format=webp&width=1200&height=1800",
     mileage: "13 km/l",
@@ -53,7 +53,7 @@ export const CAR_FLEET: Car[] = [
     type: "MUV",
     pricePerDay: 4000,
     transmission: "Manual",
-    fuel: "Diesel",
+    
     seats: 12,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F510494062f504f169861f97aef2a9987?format=webp&width=800&height=1200",
     mileage: "8 km/l",
@@ -66,7 +66,7 @@ export const CAR_FLEET: Car[] = [
     type: "Bus",
     pricePerDay: 9500,
     transmission: "Manual",
-    fuel: "Diesel",
+    
     seats: 20,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fe375da286426448dbbeee354d9ade3ec?format=webp&width=1200&height=1800",
     mileage: "4 km/l",
@@ -79,7 +79,7 @@ export const CAR_FLEET: Car[] = [
     type: "MUV",
     pricePerDay: 3800,
     transmission: "Manual",
-    fuel: "Diesel",
+    
     seats: 5,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F0065cda0514a4c9b869b357aea759ac5?format=webp&width=1200&height=1800",
     mileage: "13 km/l",
@@ -92,7 +92,7 @@ export const CAR_FLEET: Car[] = [
     type: "MUV",
     pricePerDay: 2800,
     transmission: "Manual",
-    fuel: "Petrol",
+    
     seats: 7,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F59077f5e96b64a6bb27e57e95ca63c34?format=webp&width=1200&height=1800",
     mileage: "10 km/l",
@@ -105,7 +105,7 @@ export const CAR_FLEET: Car[] = [
     type: "Hatchback",
     pricePerDay: 1800,
     transmission: "Manual",
-    fuel: "Petrol",
+    
     seats: 28,
     image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F684ebd0fcc584a3587768961e3f4412a?format=webp&width=800&height=1200",
     mileage: "4 km/l",

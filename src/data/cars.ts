@@ -29,7 +29,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 7,
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F594fe5a2ab1e4f25ba78fe7ac3125b9b?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fea8b4bcbcfab4ffeaee37fd7cccdcb96?format=webp&width=800&height=1200",
     mileage: "8 km/l",
     rating: 4.9,
     features: ["Equipped with heavy-duty front chrome SHIELD guard bar", "White professional finish", "Experienced outstation driver option", "Rooftip luggage carrier available", "Perfect for long family pilgrimages"]

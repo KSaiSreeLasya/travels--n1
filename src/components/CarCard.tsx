@@ -1,6 +1,6 @@
 import React from 'react';
 import { Car } from '../data/cars';
-import { Star, Users, Flame, Settings, Gauge, Check, MessageCircle, Phone } from 'lucide-react';
+import { Star, Users,  Settings, Gauge, Check, MessageCircle, Phone } from 'lucide-react';
 
 interface CarCardProps {
   car: Car;
@@ -9,7 +9,7 @@ interface CarCardProps {
 
 export const CarCard: React.FC<CarCardProps> = ({ car, onBook }) => {
   // Prebuilt WhatsApp message
-  const whatsappText = `Hello Sree Hanuman Travels Kadapa!\n\nI want to inquire about the rental tariff and custom package rates of *${car.name}*:\n🚗 Class: ${car.type}\n👥 Seating: ${car.seats} Passengers\n⛽ Engine: ${car.fuel}\n\nPlease share availability and pricing sheets! Thank you.`;
+  const whatsappText = `Hello Sree Hanuman Travels Kadapa!\n\nI want to inquire about the rental tariff and custom package rates of *${car.name}*:\n🚗 Class: ${car.type}\n👥 Seating: ${car.seats} Passengers\n \nPlease share availability and pricing sheets! Thank you.`;
   const whatsappUrl = `https://wa.me/919676939529?text=${encodeURIComponent(whatsappText)}`;
 
   return (
@@ -56,10 +56,7 @@ export const CarCard: React.FC<CarCardProps> = ({ car, onBook }) => {
             <Settings className="h-4 w-4 text-amber-500 shrink-0" />
             <span className="text-xs font-bold">{car.transmission}</span>
           </div>
-          <div className="flex items-center space-x-2 text-white/70">
-            <Flame className="h-4 w-4 text-amber-500 shrink-0" />
-            <span className="text-xs font-bold">{car.fuel}</span>
-          </div>
+          
           <div className="flex items-center space-x-2 text-white/70">
             <Gauge className="h-4 w-4 text-amber-500 shrink-0" />
             <span className="text-xs font-bold">{car.mileage}</span>

@@ -42,7 +42,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 5,
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F08fc29012269450babae272eb28b0ed0?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F953f90c4f39f4c3cb5555a85019d06ee?format=webp&width=800&height=1200",
     mileage: "13 km/l",
     rating: 4.8,
     features: ["12+1 Spacious layout for groups", "Heavy-duty metal roof luggage carrier rack", "Excellent high ground clearance", "Best-in-class performance for long offroad/rural paths"]
@@ -68,7 +68,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 20,
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F047dadc071874fc2af8548c83672b972?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fe375da286426448dbbeee354d9ade3ec?format=webp&width=800&height=1200",
     mileage: "4 km/l",
     rating: 4.9,
     features: ["25+1 premium push-back luxury seats", "Full air-conditioned executive coach", "High roof clearance layout", "Digital music & sound system", "Ideal for marriages, tours, and company events"]
@@ -81,7 +81,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Diesel",
     seats: 5,
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fb2d1196a4e8e4e328139046fe974eb62?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F0065cda0514a4c9b869b357aea759ac5?format=webp&width=800&height=1200",
     mileage: "13 km/l",
     rating: 4.9,
     features: ["Premium modern body lines", "Rugged matte black front protector bumper shield", "Plush luxury interior captain seats", "Perfect cooling front and rear automatic AC", "First-class highway ride comfort"]
@@ -94,7 +94,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Petrol",
     seats: 7,
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F6334270d1da149148ab68cf5115a5037?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F59077f5e96b64a6bb27e57e95ca63c34?format=webp&width=800&height=1200",
     mileage: "10 km/l",
     rating: 4.7,
     features: ["7 Seats compact passenger layout", "Traditional front flower garland ready for auspicious trips", "Highly economical smart-hybrid engine", "Dual blower front & rear cooling vents", "Excellent for city and tourist visits"]
@@ -107,7 +107,7 @@ export const CAR_FLEET: Car[] = [
     transmission: "Manual",
     fuel: "Petrol",
     seats: 28,
-    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2Fe17fff9748754b208b37aab9fe771ee0?format=webp&width=800&height=1200",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2f195b82614d46a0b777d649ad418b24%2F135a162458884800b2d93b562e6aaf81?format=webp&width=800&height=1200",
     mileage: "4 km/l",
     rating: 4.6,
     features: ["Beautiful hood red decorative ribbons perfect for weddings", "Sleek projector LED headlights for night travel", "Ultra-maneuverable local hatchback", "Extremely fuel efficient engine", "Smart keyless entry push button start"]

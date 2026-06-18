@@ -22,4 +22,4 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap location
-Sitemap: https://sreehanumantravels.com/sitemap.xml
+Sitemap: https://sreehanumantravels.co.in/sitemap.xml

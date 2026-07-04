@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { isFirebaseConfigured } from './lib/firebase';
 import { CAR_FLEET, Car } from './data/cars';
 import { SEO_META_DATA, updatePageMeta } from './data/seoMeta';
@@ -14,6 +15,15 @@ import { BookingModal } from './components/BookingModal';
 import { AboutContact } from './components/AboutContact';
 import { StructureExplorer } from './components/StructureExplorer';
 import { ScrollToTop } from './components/ScrollToTop';
+import { AirportTransfers } from './pages/AirportTransfers';
+import { BusRentalServices } from './pages/BusRentalServices';
+import { CarRentalServices } from './pages/CarRentalServices';
+import { InnovaCrystaRental } from './pages/InnovaCrystaRental';
+import { OutstationCarRentals } from './pages/OutstationCarRentals';
+import { TaxiServices } from './pages/TaxiServices';
+import { TempoTravellerRentals } from './pages/TempoTravellerRentals';
+import { TourPackages } from './pages/TourPackages';
+import { WeddingVehicleRentals } from './pages/WeddingVehicleRentals';
 
 import tirupatiImg from './assets/images/tirupati_temple_1781589399650.jpg';
 import kanipakamImg from './assets/images/kanipakam_temple_1781589414842.jpg';
@@ -1534,7 +1544,20 @@ function AppContent() {
 
 export default function App() {
   return (
-    <AppContent />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppContent />} />
+        <Route path="/airport-transfers" element={<AirportTransfers />} />
+        <Route path="/bus-rental-services" element={<BusRentalServices />} />
+        <Route path="/car-rental-services" element={<CarRentalServices />} />
+        <Route path="/innova-crysta-rental" element={<InnovaCrystaRental />} />
+        <Route path="/outstation-car-rentals" element={<OutstationCarRentals />} />
+        <Route path="/taxi-services" element={<TaxiServices />} />
+        <Route path="/tempo-traveller-rentals" element={<TempoTravellerRentals />} />
+        <Route path="/tour-packages" element={<TourPackages />} />
+        <Route path="/wedding-vehicle-rentals" element={<WeddingVehicleRentals />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export { AppContent };

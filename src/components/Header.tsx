@@ -2,23 +2,26 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { HanumanLogo } from './HanumanLogo';
 import { User, LogOut, Key, Phone, Menu, X, CheckSquare } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
-  onScrollToFleet: () => void;
-  onScrollToContact: () => void;
-  activeTab: 'explore' | 'dashboard';
-  setActiveTab: (tab: 'explore' | 'dashboard') => void;
+  onScrollToFleet?: () => void;
+  onScrollToContact?: () => void;
+  activeTab?: 'explore' | 'dashboard';
+  setActiveTab?: (tab: 'explore' | 'dashboard') => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  onScrollToFleet,
-  onScrollToContact,
-  activeTab,
-  setActiveTab
+  onScrollToFleet = () => {},
+  onScrollToContact = () => {},
+  activeTab = 'explore',
+  setActiveTab = () => {}
 }) => {
+  const navigate = useNavigate();
   // Scrolled state for glassmorphic navbar dynamics
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,9 +46,9 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Brand Logo with Hanuman face */}
-        <div 
-          className="flex items-center space-x-3 cursor-pointer group" 
-          onClick={() => { setActiveTab('explore'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+        <div
+          className="flex items-center space-x-3 cursor-pointer group"
+          onClick={() => { navigate('/'); setActiveTab('explore'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
         >
           <HanumanLogo size="md" className="group-hover:scale-105 transition-transform duration-300" />
           
@@ -86,19 +89,27 @@ export const Header: React.FC<HeaderProps> = ({
             Vehicles
           </button>
 
-          <button 
-            onClick={() => { 
-              setActiveTab('explore'); 
-              setMobileMenuOpen(false); 
-              setTimeout(() => {
-                document.getElementById('structure-explorer-section')?.scrollIntoView({ behavior: 'smooth' });
-                window.dispatchEvent(new CustomEvent('sree-hanuman-set-main-category', { detail: { mainId: 'services' } }));
-              }, 50);
-            }}
-            className="px-3.5 py-1.5 text-xs font-black uppercase tracking-wider transition-all rounded-full cursor-pointer text-white/80 hover:text-white hover:bg-white/5"
-          >
-            Services
-          </button>
+          <div className="relative group">
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="px-3.5 py-1.5 text-xs font-black uppercase tracking-wider transition-all rounded-full cursor-pointer text-white/80 hover:text-white hover:bg-white/5"
+            >
+              Services
+            </button>
+            {servicesOpen && (
+              <div className="absolute top-full mt-2 left-0 bg-slate-900 border border-white/10 rounded-lg shadow-xl z-50 min-w-max">
+                <a href="/car-rental-services" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5 rounded-t-lg">Car Rental</a>
+                <a href="/taxi-services" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Taxi Services</a>
+                <a href="/airport-transfers" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Airport Transfers</a>
+                <a href="/outstation-car-rentals" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Outstation Rentals</a>
+                <a href="/bus-rental-services" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Bus Rental</a>
+                <a href="/tempo-traveller-rentals" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Tempo Traveller</a>
+                <a href="/innova-crysta-rental" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Innova Crysta</a>
+                <a href="/wedding-vehicle-rentals" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5">Wedding Vehicles</a>
+                <a href="/tour-packages" className="block px-4 py-2 text-xs text-white/80 hover:text-white hover:bg-white/5 rounded-b-lg">Tour Packages</a>
+              </div>
+            )}
+          </div>
 
           <button 
             onClick={() => { 
@@ -205,19 +216,27 @@ export const Header: React.FC<HeaderProps> = ({
               Vehicles
             </button>
 
-            <button 
-              onClick={() => { 
-                setActiveTab('explore'); 
-                setMobileMenuOpen(false); 
-                setTimeout(() => {
-                  document.getElementById('structure-explorer-section')?.scrollIntoView({ behavior: 'smooth' });
-                  window.dispatchEvent(new CustomEvent('sree-hanuman-set-main-category', { detail: { mainId: 'services' } }));
-                }, 50);
-              }}
-              className="w-full text-left px-4 py-3 text-xs font-black uppercase tracking-wider rounded-xl text-white/80 hover:text-white hover:bg-white/5"
-            >
-              Services
-            </button>
+            <div className="space-y-2">
+              <button
+                onClick={() => setServicesOpen(!servicesOpen)}
+                className="w-full text-left px-4 py-3 text-xs font-black uppercase tracking-wider rounded-xl text-white/80 hover:text-white hover:bg-white/5"
+              >
+                Services ▼
+              </button>
+              {servicesOpen && (
+                <div className="space-y-1 pl-4">
+                  <a href="/car-rental-services" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Car Rental</a>
+                  <a href="/taxi-services" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Taxi Services</a>
+                  <a href="/airport-transfers" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Airport Transfers</a>
+                  <a href="/outstation-car-rentals" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Outstation Rentals</a>
+                  <a href="/bus-rental-services" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Bus Rental</a>
+                  <a href="/tempo-traveller-rentals" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Tempo Traveller</a>
+                  <a href="/innova-crysta-rental" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Innova Crysta</a>
+                  <a href="/wedding-vehicle-rentals" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Wedding Vehicles</a>
+                  <a href="/tour-packages" className="block px-4 py-2 text-xs text-white/70 hover:text-white rounded">Tour Packages</a>
+                </div>
+              )}
+            </div>
 
             <button 
               onClick={() => { 

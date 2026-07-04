@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Phone, MapPin, CheckCircle, Star, ArrowRight } from 'lucide-react';
 import { updatePageMeta } from '../data/seoMeta';
+import { Header } from '../components/Header';
 
 interface ServicePageProps {
   title: string;
@@ -34,6 +35,7 @@ export function ServicePage({
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <Header />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950 py-20 px-4 text-white sm:px-6 lg:px-8">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
@@ -135,6 +137,29 @@ export function ServicePage({
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-200 bg-white mt-20 py-10 text-center text-xs text-slate-500 leading-relaxed shadow-inner">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4">
+          <div className="flex items-center justify-center space-x-2">
+            <span className="h-1 bg-gradient-to-r from-amber-500 to-orange-500 w-8 rounded-full"></span>
+            <p className="font-black text-slate-900 uppercase tracking-[0.2em] text-sm">Sree Hanuman Travels Kadapa</p>
+            <span className="h-1 bg-gradient-to-r from-orange-500 to-amber-500 w-8 rounded-full"></span>
+          </div>
+          <p className="text-xs text-orange-600 font-black uppercase tracking-widest bg-orange-500/10 px-4 py-1.5 rounded-full col-span-full max-w-max mx-auto border border-orange-500/20 shadow-sm leading-none">
+            Prop: Settooru Bros.
+          </p>
+          <p className="max-w-lg mx-auto text-[11px] text-slate-500 font-semibold uppercase tracking-wide">
+            📍 3/108-10-A1, Sattar Colony, Ravindra Nagar, Nagarajupeta, Kadapa, Andhra Pradesh 516001
+          </p>
+          <p className="text-[11px] text-slate-700 font-black uppercase tracking-wider">
+            📞 Contact: +91 7989648106 • Support Hotline: +91 7989648106
+          </p>
+          <p className="text-[10px] text-slate-400 font-mono pt-4 border-t border-slate-100 max-w-md mx-auto">
+            © 2026 Sree Hanuman Travels Kadapa. Direct authorized Car, Bus & Cab Operator with Zero Security Deposit. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

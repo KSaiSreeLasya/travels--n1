@@ -1,7 +1,7 @@
 import React from 'react';
 import { ServicePage } from './ServicePage';
 
-export function Innova CrystaRental() {
+export function InnovaCrystaRental() {
   return (
     <ServicePage
       title="Innova Crysta Rental"

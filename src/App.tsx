@@ -520,7 +520,7 @@ function AppContent() {
               {/* Display Title with typography tracking details (No hardcoded rates in title) */}
               <div className="space-y-4">
                 <h2 className="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white max-w-4xl mx-auto uppercase italic">
-                  SREE HANUMAN <span className="text-orange-500">TRAVELS</span> KADAPA
+                   CAR RENTALS  <span className="text-orange-500">IN KADAPA</span> KADAPA
                 </h2>
                 <div className="h-1 w-28 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full"></div>
               </div>

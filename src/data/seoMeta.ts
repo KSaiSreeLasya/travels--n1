@@ -19,10 +19,10 @@ export const SEO_META_DATA: Record<string, PageMeta> = {
     "car rentals in kadapa, taxi service kadapa, bus rental kadapa, tempo traveller rental kadapa, innova crysta rental kadapa, airport taxi kadapa, outstation taxi kadapa",
 },
   carRentalServices: {
-    title: "Best Car Rental Services in Kadapa | Sree Hanuman Travels",
+    title: "Daily & Outstation Car Rental Services | Sree Hanuman Travels Kadapa",
     description: "Hire AC cars, Innova Crysta, SUVs, luxury vehicles, and economy cars in Kadapa. Flexible hourly, daily, and monthly rental plans available.",
     canonical: "https://sreehanumantravels.co.in/car-rental-services",
-    keywords: "Car Rental Kadapa, AC Cars Kadapa, SUV Rental, Innova Crysta Kadapa",
+    keywords: "Daily Car Rental Kadapa, Outstation Car Rental Kadapa, Airport Car Rental Kadapa, Driver Car Rental Kadapa",
   },
   taxiServices: {
     title: "24 Hours Taxi Services in Kadapa | Local & Outstation Cabs",
@@ -91,10 +91,10 @@ export const SEO_META_DATA: Record<string, PageMeta> = {
     keywords: "Monthly Car Rental Kadapa, Long-Term Car Hire, Affordable Car Rental",
   },
   luxuryVehicleRentals: {
-    title: "Luxury Car & Bus Rentals in Kadapa | Premium Travel Experience",
+    title: "Luxury Vehicle Rentals in Kadapa | Premium Cars & SUVs",
     description: "Travel in comfort with luxury cars, SUVs, Innova Crysta, Urbania, and luxury buses available for rent in Kadapa.",
     canonical: "https://sreehanumantravels.co.in/luxury-vehicle-rentals",
-    keywords: "Luxury Car Rental, SUV Rental Kadapa, Premium Vehicle Hire",
+    keywords: "Luxury Vehicle Rental Kadapa, Premium SUV Rental Kadapa, Luxury Car Hire Kadapa, Wedding Luxury Cars",
   },
   contact: {
     title: "Contact Sree Hanuman Travels Kadapa | Taxi & Car Booking",

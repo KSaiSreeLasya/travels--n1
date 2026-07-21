@@ -7,17 +7,17 @@ export function CarRentalServices() {
       title="Car Rental Services"
       headline="Professional and affordable car rental services in Kadapa with experienced drivers, sanitized vehicles, and 24/7 customer support."
       description="Sree Hanuman Travels provides premium car rental services across Kadapa and surrounding areas. Whether you need a vehicle for a day trip, weekend getaway, or extended travel, we offer a diverse fleet of well-maintained cars with professional drivers. Our services include city commuting, airport transfers, outstation tours, and special event transportation. All vehicles undergo regular sanitization and maintenance to ensure your safety and comfort."
-      metaTitle="Car Rental Kadapa | Best Car Rental Services in Kadapa"
-      metaDescription="Professional car rental services in Kadapa. Book affordable cars with experienced drivers. 24/7 booking, airport transfers, outstation tours. Call +91 7989648106"
+      metaTitle="Daily & Outstation Car Rental Services | Sree Hanuman Travels Kadapa"
+      metaDescription="Daily and outstation car rental services from Kadapa with professional drivers, airport transfers, family trips and flexible booking. Call +91 7989648106."
       keywords={[
-        "car rental kadapa",
-        "car rental in kadapa",
-        "rental cars kadapa",
-        "best car rental kadapa",
-        "affordable car rental kadapa",
-        "car hire kadapa",
-        "car rental near me",
-        "taxi service kadapa"
+       "daily car rental kadapa",
+      "outstation car rental kadapa",
+      "airport car rental kadapa",
+      "family car rental kadapa",
+      "driver car rental kadapa",
+      "self drive alternative kadapa",
+      "weekend car rental kadapa",
+      "professional driver kadapa"
       ]}
       features={[
         "Well-maintained fleet of sedans and SUVs",

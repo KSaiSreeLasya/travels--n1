@@ -519,14 +519,17 @@ function AppContent() {
               
               {/* Display Title with typography tracking details (No hardcoded rates in title) */}
               <div className="space-y-4">
-                <h2 className="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white max-w-4xl mx-auto uppercase italic">
-                   CAR RENTALS  <span className="text-orange-500">IN KADAPA</span> KADAPA
-                </h2>
+                <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white max-w-4xl mx-auto uppercase italic">
+  Car Rentals in Kadapa
+  <span className="block text-orange-500 text-3xl sm:text-5xl mt-2">
+    Taxi • Bus • Tempo Traveller
+  </span>
+</h1>
                 <div className="h-1 w-28 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto rounded-full"></div>
               </div>
               
               <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto font-medium leading-relaxed">
-                Premium 24-Hour Car & Bus Bookings, Outstation Tour Packages, Daily Passenger Trips, and Tirupati Darshan Airport Drops. Reliable fleet of sanitized vehicles, experienced drivers, and 24/7 direct customer support.
+                Sree Hanuman Travels is one of the leading car rental companies in Kadapa offering taxi services, bus rentals, Tempo Traveller rentals, Innova Crysta, airport transfers, corporate travel, local trips and outstation travel across Andhra Pradesh, Telangana, Karnataka and Tamil Nadu.
               </p>
 
               {/* Action grid (Calls dialer & Scroll to fleet) */}
